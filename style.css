@@ -1,0 +1,147 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", "Roboto", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.header-container, .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.banner {
+  background: url('img/banner.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.button {
+  background-color: #007BFF;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.intro-items, .classic-items, .co-design-items, .recommendation-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.intro-item, .classic-item, .co-design-item, .recommendation-item {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro-item img, .classic-item img, .co-design-item img, .recommendation-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  background-color: #007BFF;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-contact h4, .footer-nav ul, .social-icons {
+  margin-bottom: 20px;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-right: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container, .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+}
